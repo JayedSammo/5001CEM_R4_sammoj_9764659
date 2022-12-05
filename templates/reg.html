@@ -1,0 +1,19 @@
+{% block b %}
+    <H1>REGISTER</H1>
+    
+    <P>Please register your usrname and password:</P>
+
+<form class="form-horizontal" method="post">
+    <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" class="form-control" id="username" name="username" placeholder="Username" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="pwd">Password</label>
+        <input type="password" class="form-control" id="pwd" name="pwd" placeholder="Password" required>
+    </div>
+    <input type="submit"  class="btn btn-default" value="Register">
+</form>
+
+{% endblock %}

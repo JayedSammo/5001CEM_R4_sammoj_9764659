@@ -1,0 +1,235 @@
+/* style.css file controls all the related HTML files from template folder */
+
+body {
+	font-family: Arial;
+	color: #211a1a;
+	font-size: 0.9em;
+}
+
+#home {
+	margin: 40px;
+}
+
+#book-grid {
+	margin: 40px;
+}
+
+#book-cart {
+	margin: 40px;
+}
+
+#book-cart table {
+	width: 100%;
+	background-color: #F0F0F0;
+}
+
+#book-cart table td {
+	background-color: #FFFFFF;
+}
+
+.txt-heading {
+	color: #211a1a;
+	border-bottom: 1px solid #E0E0E0;
+	overflow: auto;
+}
+
+#btnReg {
+	background-color: #0889f3;
+	border: #400192 2px solid;
+	padding: 5px 10px;
+	color: #000000;
+	float: left;
+	text-decoration: none;
+	border-radius: 5px;
+	margin: 10px 0px;
+}
+
+#btnLogin {
+	background-color: #eff308;
+	border: #000000 2px solid;
+	padding: 5px 10px;
+	color: #000000;
+	float: right;
+	text-decoration: none;
+	border-radius: 5px;
+	margin: 10px 0px;
+}
+
+#btnLogout {
+	background-color: #f3a908;
+	border: #000000 2px solid;
+	padding: 5px 10px;
+	color: #000000;
+	float: left;
+	text-decoration: none;
+	border-radius: 5px;
+	margin: 10px 0px;
+}
+
+#btnShop {
+	background-color: #e3f308;
+	border: #000000 2px solid;
+	padding: 5px 10px;
+	color: #000000;
+	float: left;
+	text-decoration: none;
+	border-radius: 5px;
+	margin: 10px 0px;
+}
+
+#btnStock {
+	background-color: #ffffff;
+	border: #f70757 1px solid;
+	padding: 5px 10px;
+	color: #f70757;
+	float: right;
+	text-decoration: none;
+	border-radius: 3px;
+	margin: 10px 0px;
+}
+
+#btnCart {
+	background-color: #ffffff;
+	border: #3700d0 1px solid;
+	padding: 5px 10px;
+	color: #1500d0;
+	float: right;
+	text-decoration: none;
+	border-radius: 3px;
+	margin: 10px 0px;
+}
+
+#btnEmpty {
+	background-color: #ffffff;
+	border: #d00000 1px solid;
+	padding: 5px 10px;
+	color: #d00000;
+	float: right;
+	text-decoration: none;
+	border-radius: 3px;
+	margin: 10px 0px;
+}
+
+#btnCheckout {
+	background-color: #fafcfc;
+	border: #081270 1px solid;
+	padding: 5px 10px;
+	color: #0fa81c;
+	float: right;
+	text-decoration: none;
+	border-radius: 3px;
+	margin: 10px 0px;
+}
+
+#btnPay {
+	background-color: #25eeee;
+	border: #075f7a 2px solid;
+	padding: 10px 15px;
+	color: #861111;
+	float: right;
+	text-decoration: none;
+	border-radius: 3px;
+	margin: 10px 0px;
+}
+
+.btnAddAction {
+    padding: 5px 10px;
+    margin-left: 5px;
+    background-color: #efefef;
+    border: #E0E0E0 1px solid;
+    color: #211a1a;
+    float: right;
+    text-decoration: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#book-grid .txt-heading {
+	margin-bottom: 18px;
+}
+
+.book-item {
+	float: left;
+	background: #ffffff;
+	margin: 30px 30px 0px 0px;
+	border: #E0E0E0 1px solid;
+}
+
+.stock-item {
+	float: left;
+	background: #ffffff;
+	margin: 30px 30px 0px 0px;
+	border: #E0E0E0 1px solid;
+}
+
+.book-image {
+	height: 155px;
+	width: 250px;
+	background-color: #FFF;
+}
+
+.clear-float {
+	clear: both;
+}
+
+.demo-input-box {
+	border-radius: 2px;
+	border: #CCC 1px solid;
+	padding: 2px 1px;
+}
+
+.tbl-cart {
+	font-size: 0.9em;
+}
+
+.tbl-cart th {
+	font-weight: normal;
+}
+
+.book-title {
+	padding: 5px 10px;
+	margin-bottom: 10px;
+}
+
+.book-price {
+	padding: 5px 10px;
+	margin-left: 5px;
+	float:left;
+}
+
+.cart-action {
+	float: right;
+}
+
+.book-quantity {
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: #E0E0E0 1px solid;
+}
+
+.book-tile-footer {
+    padding: 15px 15px 0px 15px;
+    overflow: auto;
+}
+
+.cart-item-image {
+	width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: #E0E0E0 1px solid;
+    padding: 5px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+.intro {
+	text-align: center;
+	clear: both;
+	margin: 38px 0px;
+}
+
+.no-records {
+	text-align: center;
+	clear: both;
+	margin: 38px 0px;
+}

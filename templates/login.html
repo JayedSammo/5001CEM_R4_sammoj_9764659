@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Login</title>
+ <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+ <H1>Login</H1>
+ 
+ <P>Please enter your usrname and password:</P>
+ <form action="{{page}}" method="post">
+ <label for="uname">Username:</label><br>
+ <input type="text" id="uname" name="uname" placeholder="Type UserName" required><br>
+ <label for="pwd">Password:</label><br>
+ <input type="password" class="form-control" id="pwd" name="pwd" placeholder="Type Password" required>
+ <input type="checkbox" onclick="password_F()">Show<br><br>
+ <input type="submit" value="Login">
+ </form> 
+
+ <script>
+ function password_F() {
+     var p = document.getElementById("pwd");
+     if (p.type === "password") {
+         p.type = "text";
+     } else {
+         p.type = "password";
+     }
+ }
+ </script>
+ 
+</body>
+</html>

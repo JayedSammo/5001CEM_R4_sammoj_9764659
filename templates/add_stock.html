@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+
+{% block b %}
+
+    <div id="home">
+        <H1 class="txt-heading">Add More Stock</H1>
+        <a id="btnStock" href="/stock">Stock</a>
+        <a id="btnLogout" href="/logout">Logout</a>
+    
+            <P class="intro">Please add stock to the bookshop:</P>
+    
+    </div>
+
+    <div class="book-grid">
+
+        <form class="form-horizontal" method="post">
+            <div class="form-group">
+                <label for="bookname">Bookname</label>
+                <input type="text" class="form-control" id="bookname" name="bookname" placeholder="Bookname" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="author">Author</label>
+                <input type="text" class="form-control" id="author" name="author" placeholder="Author" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" class="form-control" id="date" name="date" placeholder="Date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ISBN">ISBN</label>
+                <input type="int" class="form-control" id="ISBN" name="ISBN" placeholder="ISBN" required>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea class="form-control" id="description" name="description" placeholder="Description" rows="5"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="image">Upload Image (.jpg)</label>
+                <input type="file" class="book-image" id="image" accept="image/*" name="image" required>
+            </div>
+
+            <div class="form-group">
+                <label for="trade_price">Trade Price</label>
+                <input type="number" step="0.01" min="0" max="100" class="form-control" id="trade_price" name="trade_price" placeholder="&#8356; Trade" required>
+            </div>
+
+            <div class="form-group">
+                <label for="retail_price">Retail_Price</label>
+                <input type="number" step="0.01" min="0" max="100" class="form-control" id="retail_price" name="retail_price" placeholder="&#8356; Retail" required>
+            </div>
+
+            <div class="form-group">
+                <label for="quantity">Quantity</label>
+                <input type="number" min="0" max="20" class="form-control" id="quantity" name="quantity" placeholder="Qty" required>
+            </div>
+
+            <input type="submit"  class="btn btn-default" value="Add Stock">
+        </form>
+    </div>
+
+{% endblock %}

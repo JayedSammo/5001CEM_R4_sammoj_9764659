@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block b %}
+
+
+    <div id="home">
+		<div class="txt-heading">HOME</div>
+		<a id="btnLogin" href="/login">Login</a>
+        <a id="btnReg" href="/register">Register</a>
+            <div class="intro">This is the home page for books!</div>
+
+    </div>
+
+
+
+    <div id="book-grid">
+		<div class="txt-heading">Books</div>
+
+		{% for book in books %}
+        
+
+			<div class="book-item">
+				<form method="post" action="/add">
+					<div class="book-image"><img src="/static/images/{{ book[5] }}"></div>
+					<div class="book-tile-footer">
+						<div class="book-title">{{ book[0] }}</div>
+						<div class="book-price">&#8356; {{ book[6] }}</div>
+						<div class="cart-action">
+							<input type="hidden" name="ISBN" value="{{ book[3] }}"/>
+							<input type="number" min="{{ book[8] }}" max="{{ book[8] }}" class="book-quantity" name="quantity" value="{{ book[8] }}" />
+							<input type="hidden" value="Add to Cart" class="btnAddAction" />
+						</div>
+					</div>
+				</form>
+			</div>
+
+		{% endfor %}
+	
+	</div>
+
+{% endblock %}
